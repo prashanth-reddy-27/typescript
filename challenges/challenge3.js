@@ -4,14 +4,19 @@ Challenge 3:
 Write a function that accepts either a string or a number and then returns a string
 message describing the input type
 */
-var checkType = function (data) {
+function checkType(data) {
     if (typeof data === "string") {
         return "You passed a string: \"".concat(data, "\"");
     }
-    else {
+    else if (typeof data === "number") {
         return "You passed a number: ".concat(data);
     }
-};
+    else {
+        return "You passed a ".concat(typeof (data), " : ").concat(data);
+    }
+}
+;
+var nill = null;
 console.log(checkType("Hello"));
 console.log(checkType(56));
-console.log(checkType("Hi"));
+console.log(checkType(nill));

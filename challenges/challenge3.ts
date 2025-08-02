@@ -4,15 +4,18 @@ Write a function that accepts either a string or a number and then returns a str
 message describing the input type
 */
 
-const checkType = (data: number | string): string => {
+function checkType<DataType> (data:DataType): string  {
   if (typeof data === "string") {
     return `You passed a string: "${data}"`;
-  } else {
+  } else if (typeof data === "number"){
     return `You passed a number: ${data}`;
   }
+  else{
+    return `You passed a ${typeof(data)} : ${data}`;
+  }
 };
-
 console.log(checkType("Hello"));
 console.log(checkType(56));
-console.log(checkType("Hi"));
+let nill=null;
+console.log(checkType(nill));
 
