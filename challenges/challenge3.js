@@ -12,9 +12,6 @@ var checkType = function (data) {
         return "You passed a number: ".concat(data);
     }
 };
-var dataString = "hello";
-var dataType = checkType(dataString);
-console.log(dataType); // You passed a string: "hello"
-var dataNumber = 1;
-dataType = checkType(dataNumber);
-console.log(dataType); // You passed a number: 1
+console.log(checkType("Hello"));
+console.log(checkType(56));
+console.log(checkType("Hi"));

@@ -12,10 +12,7 @@ const checkType = (data: number | string): string => {
   }
 };
 
-let dataString: string = "hello";
-let dataType: string = checkType(dataString);
-console.log(dataType);  // You passed a string: "hello"
+console.log(checkType("Hello"));
+console.log(checkType(56));
+console.log(checkType("Hi"));
 
-let dataNumber: number = 1;
-dataType = checkType(dataNumber);
-console.log(dataType);  // You passed a number: 1
