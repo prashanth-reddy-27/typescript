@@ -1,0 +1,11 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "G R Prashanth Reddy",
+  "license": "MIT",
+  "dependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.8.3"
+  }
+}
