@@ -16,7 +16,7 @@ function checkType(data) {
     }
 }
 ;
-var nill = null;
 console.log(checkType("Hello"));
 console.log(checkType(56));
-console.log(checkType(nill));
+// let nill=null;
+console.log(checkType(null));

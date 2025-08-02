@@ -16,6 +16,5 @@ function checkType<DataType> (data:DataType): string  {
 };
 console.log(checkType("Hello"));
 console.log(checkType(56));
-let nill=null;
-console.log(checkType(nill));
+console.log(checkType(null));
 
